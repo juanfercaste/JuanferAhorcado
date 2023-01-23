@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego del ahorcado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/Logo.svg" alt="logo de alura" />
+    </div>
+    <!---- <img src="img/logo.svg" class="logo" /> -->
+
+    <div class="inicio">
+      <button class="btn-inicio">Iniciar Juego</button>
+      <!-- <button class="btn-agregar">Agregar nueva palabra</button> -->
+    </div>
+    <div id="div-aparece-ahorcado" class="canvas">
+      <!-- Canvas -->
+      <canvas id="ahorcado" width="1200" height="860"></canvas>
+      <div class="subrayado"></div>
+    </div>
+    <div id="mensaje" class="mensaje">
+      <h1 id="alerta">Fin del juego Perdiste</h1>
+      <button class="btn-de-nuevo">Iniciar Juego Nuevo</button>
+    </div>
+    <div id="mensaje-dos" class="mensaje-dos">
+      <h1 id="alerta">Felicidades Ganaste</h1>
+      <button class="btn-de-nuevo btn-nuevo-dos">Iniciar Juego Nuevo</button>
+    </div>
+    <footer class="dev-informacion">
+      <a href="https://github.com/juanfercaste" target="_blank"
+        ><ion-icon name="logo-github" class="social-icon"></ion-icon
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/juan-cerrato-a33422167/"
+        target="_blank"
+        ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
+      ></a>
+      <p class="copyright">&copy; 2022-Juan Fernando Cerrato</p>
+    </footer>
+    <!-- JavaScript -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="horca.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>

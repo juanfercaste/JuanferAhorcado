@@ -1,0 +1,141 @@
+/* ------- reset general ------ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  background: #f3f5fc;
+}
+
+.logo {
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+/* seccion de inicio del juego*/
+.inicio,
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.mensaje {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mensaje-dos {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mensaje h1 {
+  font-size: 4rem;
+  color: red;
+  background-color: #7291eeee;
+}
+.mensaje-dos h1 {
+  font-size: 4rem;
+  color: green;
+  background-color: #7291eeee;
+}
+
+.btn-de-nuevo {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0a3871;
+  width: 20rem;
+  height: 6rem;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.btn-de-nuevo:hover {
+  background-color: #0f60c4;
+  transform: translateY(-1.2rem);
+}
+
+.btn-inicio {
+  color: white;
+  background-color: #0a3871;
+  width: 30rem;
+  height: 10rem;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-inicio:hover {
+  background-color: #0f60c4;
+  transform: translateY(-1.2rem);
+}
+
+.btn-agregar {
+  color: #0a3871;
+  width: 25rem;
+  height: 8rem;
+  padding: 2.4rem;
+  border: 0.1rem solid #0a3871;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-agregar:hover {
+  background-color: #0f60c4;
+  color: white;
+  transform: translateY(-1.2rem);
+}
+
+.canvas {
+  margin-left: 2.5rem;
+  width: 1024px;
+  height: 800px;
+}
+
+/*------- dev fotter information -------*/
+.dev-informacion {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+  color: #0a3871;
+}
+
+.dev-icon {
+  font-size: 2.5rem;
+  color: #0a3871;
+}
